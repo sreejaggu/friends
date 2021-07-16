@@ -12,11 +12,10 @@ Please follow below given simple instructions to run the application.
 
 If application started properly then you will see below mentioned console output.
 Later open the elastic cloud APM page to see the 'friends' service listed under services and many other metrics available at transaction level, at JVM level etc.,
-  https://sree-i-o-optimized-deployment.kb.ap-south-1.aws.elastic-cloud.com:9243/app/apm/?rangeFrom=now-4h&rangeTo=now
-  
+   
 Please find attached a word document 'Friends-ElasticCloudKibana.docx' containing screeshots of different metrics from 'friends' service.The elastic APM agent sends the metrics to elastic cloud.
 
-************************************\friends>java -javaagent:agent/elastic-apm-agent-1.17.0.jar -Delastic.apm.service_name=friends -Delastic.apm.server_urls=https://sree-i-o-optimized-deployment.apm.ap-south-1.aws.elastic-cloud.com -Delastic.apm.secret_token=u5dl1NcCZN5aHpiQlN  -Delastic.apm.application_packages=com.observe -jar target/friends-0.0.1-SNAPSHOT.jar  --spring.config.location=application.properties
+************************************\friends>java -javaagent:agent/elastic-apm-agent-1.17.0.jar -Delastic.apm.service_name=friends -Delastic.apm.server_urls=<> -Delastic.apm.secret_token=<>  -Delastic.apm.application_packages=com.observe -jar target/friends-0.0.1-SNAPSHOT.jar  --spring.config.location=application.properties
 2021-07-16 14:52:44,681 [main] INFO  co.elastic.apm.agent.util.JmxUtils - Found JVM-specific OperatingSystemMXBean interface: com.sun.management.OperatingSystemMXBean
 2021-07-16 14:52:45,657 [main] INFO  co.elastic.apm.agent.configuration.StartupInfo - Starting Elastic APM 1.17.0 as friends on Java 1.8.0_291 (Oracle Corporation) Windows 10 10.0
 2021-07-16 14:52:47,975 [main] INFO  co.elastic.apm.agent.impl.ElasticApmTracer - Tracer switched to RUNNING state
@@ -31,7 +30,7 @@ Please find attached a word document 'Friends-ElasticCloudKibana.docx' containin
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.5.2)
 
-2021-07-16 14:52:49.617  INFO 26932 --- [           main] com.observe.friends.FriendsApplication   : Starting FriendsApplication v0.0.1-SNAPSHOT using Java 1.8.0_291 on OPBL-5CG8336FPC with PID 26932 (************************************\friends\target\friends-0.0.1-SNAPSHOT.jar started by sreedevigv in ************************************\friends)
+2021-07-16 14:52:49.617  INFO 26932 --- [           main] com.observe.friends.FriendsApplication   : Starting FriendsApplication v0.0.1-SNAPSHOT using Java 1.8.0_291 on host with PID 26932 (************************************\friends\target\friends-0.0.1-SNAPSHOT.jar started by sreedevigv in ************************************\friends)
 2021-07-16 14:52:49.621  INFO 26932 --- [           main] com.observe.friends.FriendsApplication   : No active profile set, falling back to default profiles: default
 2021-07-16 14:52:51.856  INFO 26932 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2021-07-16 14:52:51.966  INFO 26932 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interfaces.
