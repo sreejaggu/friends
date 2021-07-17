@@ -14,4 +14,6 @@ Later open the elastic cloud APM page to see the 'friends' service listed under 
 Please find attached a word document 'Friends-ElasticCloudKibana.docx' containing screeshots of different metrics from 'friends' service.The elastic APM agent sends the metrics to elastic cloud.
 
 Block diagram:
+
+
 ![MonitorFriends](https://user-images.githubusercontent.com/53043095/126027662-0c9f696a-d2a2-40b1-be13-e330e07a0231.png)
